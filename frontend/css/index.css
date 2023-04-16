@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+.show {
+  display: block !important;
+  /* visibility: block !important; */
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.do-not-display {
+  display: none !important;
+}
+
+.highlight-green {
+  background-color: #bbdfbc;
+}
+
+/* Layout */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  background-color: #5560A9;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#shortcuts {
+  display: inline;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  width: 230px;
+  background-color: #f5f5f5;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  z-index: 100;
+  cursor: move;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#shortcuts-close-btn{
+  z-index: 150;
+  cursor: pointer !important;
+}
+
+#setting-btn {
+  display: none;
+  margin-left: 10px;
+}
+
+#control {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+  opacity: 0.8;
+  overflow-x: scroll;
+}
+
+#frontend {
+  position: relative;
+  width: 60%;
+  height: calc(100vh - 100px - 60px - 100px);  /* header - footer - top/bottom margin */
+  margin: 50px auto;
+}
+
+#frontend-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+
+  overflow-y: scroll;
+}
+
+#editor-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+#editor-container {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  height: auto;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#robot {
+  margin-left: 10px;
+  z-index: 100;
+}
+
+#timer{
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+/* Global */
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300 !important;
+}
+
+#footer button {
+  border: none !important;
+  background: none !important;
+  transition: none !important;
+  color: #444 !important;
+}
+
+#footer i {
+  margin: 0 10px 0 10px;
+}
+
+button > i {
+  margin: 0 5px 0 5px;
+}
+
+ol, ul {
+  margin-top: 1rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Control */
+#control select {
+  padding: .375rem .75rem;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  color: #495057;
+  text-align: center;
+}
+
+#control input {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+#control > .form-inline {
+  display: inline-flex;
+  flex-flow: nowrap;
+  flex-wrap: nowrap;
+}
+
+/* Instruction */
+.key {
+  background-color: black;
+  border-radius: 5px;
+  padding: 2px 4px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Editor */
+.ql-editor {
+  height: calc(100vh - 100px - 50px - 100px - 100px);
+}
+
+.ql-editor, .ql-toolbar, .ql-container.ql-snow {
+  border: none !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}

@@ -1,0 +1,25 @@
+.dropdown-item.sudo-click {
+  background-color: #B53737;
+}
+
+#frontend {
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin: 0;
+}
+
+#editor-view {
+  height: 100%;
+  border-radius: 0;
+}
+
+.ql-editor {
+  height: calc(100vh - 150px) !important;
+}
+
+.error{
+}
+
+.base {
+  color: #5560A9 !important;
+}

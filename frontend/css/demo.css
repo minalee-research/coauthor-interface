@@ -1,0 +1,16 @@
+#loading-signal {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  color: #888;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 5000;
+}

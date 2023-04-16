@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Replay</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex"> <!-- Prevent this page from being indexed -->
+
+    <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/writing-hand_270d-fe0f.png">
+
+    <!-- Redirect to http -->
+    <script>
+      if (location.protocol == "https:") {
+        location.protocol = "http:";
+      }
+    </script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Quill Editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./css/animation.css"/>
+    <link rel="stylesheet" href="./css/dropdown.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/replay.css"/>
+
+    <!-- Data -->
+    <script>const domain = 'replay';</script>
+    <script src="./js/config.js" defer></script>
+    <script src="./js/helper.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/logging.js" defer></script>
+    <script src="./js/animation.js" defer></script>
+    <script src="./js/editor.js" defer></script>
+    <script src="./js/dropdown.js" defer></script>
+    <script src="./js/async.js" defer></script>
+    <script src="./js/replay.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <div id="frontend">
+      <div id="editor-view">
+        <div id="editor-container">
+        </div>
+      </div>
+    </div>
+
+    <div id="frontend-overlay" class="dropdown-menu hidden">
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <span class="mx-sm-3"># Query <span id="query-current">0</span> / <span id="query-total">0</span></span>
+      <span class="mx-sm-3"># Selected <span id="selected-current">0</span> / <span id="selected-total">0</span></span>
+      <span class="mx-sm-3">Time: <span id="time-elapsed">00:00</span> (<span id="time-total">00:00</span>)</span>
+      <span class="mx-sm-3">Progress: <span id="log-current">0</span> / <span id="log-total">0</span></span>
+    </footer><!-- Footer -->
+
+    <!-- Bootstrap -->
+    <script src="./lib/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ec39425d5e.js" crossorigin="anonymous"></script>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.dropdown-menu {
+  height: auto;
+  
+  display: block !important;  /* Overwrite bootstrap */
+  margin: 0px !important;
+  margin-right: 25px !important;
+  padding: 0px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+
+}
+
+.dropdown-item {
+  height: auto;
+
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  white-space: break-spaces !important;
+  hyphens: auto;
+
+  padding: 10px 20px;
+  margin-bottom: 1px;
+  background-color: #eee;
+
+  cursor: pointer !important;
+}
+
+.dropdown-item:hover {
+  background-color: #F6AE2D;
+}
+
+.dropdown-item.sudo-hover {
+  background-color: #F6AE2D;
+}
