@@ -21,10 +21,12 @@ If you have any questions, please feel free to reach out to [Mina Lee](https://m
 ---
 
 ## Contents
-- [Backend](#Backend)
-- [Frontend](#Frontend)
-- [Advanced Usage](#Advanced-Usage)
-- [Metrics](#Metrics): Coming soon!
+- [Overview](#overview)
+- [Contents](#contents)
+- [Backend](#backend)
+- [Frontend](#frontend)
+- [Advanced Usage](#advanced-usage)
+- [Metrics](#metrics)
 
 ---
 
@@ -74,7 +76,7 @@ python3 api_server.py \
 
 The backend initializes sessions using access codes that are read from `data/access\_codes.csv`. When you enter the frontend, the access code provided needs to match one of the created codes here.  
 
-The choice of models, examples (prompts that are hidden from users), and prompts (prompts that are shown to users in the text editor) can be specififed when you create `data/access\_codes.csv`. 
+The choice of models, examples (prompts that are hidden from users), and prompts (prompts that are shown to users in the text editor) can be specified when you create `data/access\_codes.csv`. 
 
 ---
 
@@ -82,7 +84,7 @@ The choice of models, examples (prompts that are hidden from users), and prompts
 
 **1. Run the frontend**
 
-You can run the fronend using a simple Python server or host it on a third-party server.
+You can run the frontend using a simple Python server or host it on a third-party server.
 
 To run the frontend on a local machine, run the following command in the `./frontend` directory:
 
@@ -109,7 +111,7 @@ Now, you can access the frontend server on your browser as follows:
 FRONTEND_URL/index.html?access_code=ACCESS_CODE
 ```
 
-where `FRONTEND_URL` is the URL of the frontend server (e.g. `http://127.0.0.1:8000`) and `ACCESS_CODE` is one of the access codes you defined in `./config/access_codes.csv`. If you have followed the instructions above, you should be able to access the frontend at [here](http://http://127.0.0.1:8000/index.html?access_code=demo):
+where `FRONTEND_URL` is the URL of the frontend server (e.g. `http://127.0.0.1:8000`) and `ACCESS_CODE` is one of the access codes you defined in `./config/access_codes.csv`. If you have followed the instructions above, you should be able to access the frontend at [here](http://127.0.0.1:8000/index.html?access_code=demo):
 
 ```
 http://127.0.0.1:8000/index.html?access_code=demo
