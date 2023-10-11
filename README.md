@@ -16,7 +16,7 @@ For downloading the CoAuthor dataset and replaying its writing sessions, please 
 [CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities](https://arxiv.org/abs/2201.06796) ([Mina Lee](https://minalee.info/), [Percy Liang](https://cs.stanford.edu/~pliang/), and [Qian Yang](https://qianyang.co/), CHI 2022)
 - Main contributors of this repository: [Mina Lee](https://minalee.info/) and [Vishakh Padmakumar](https://vishakhpk.github.io/).
 
-If you have any questions, please feel free to reach out to [Mina Lee](https://minalee.info/) at `minalee@stanford.edu`.
+If you have any questions, please feel free to reach out to [Mina Lee](https://minalee.info/) at `mnlee@uchicago.edu`.
 
 ---
 
@@ -43,7 +43,7 @@ Type the following command to clone this repository into a directory of your cho
 git clone https://github.com/minggg/coauthor-interface
 ```
 
-Inside of the `coauthor-interface` directory run the following to install required packages:
+Inside the `coauthor-interface` directory, run the following to install the required packages:
 
 ```
 pip install -r requirements.txt
