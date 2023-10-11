@@ -26,7 +26,6 @@ If you have any questions, please feel free to reach out to [Mina Lee](https://m
 - [Backend](#backend)
 - [Frontend](#frontend)
 - [Advanced Usage](#advanced-usage)
-- [Metrics](#metrics)
 
 ---
 
